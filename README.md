@@ -15,7 +15,7 @@ A powerful Python script for downloading music from YouTube. This tool allows yo
 ## 📋 Requirements
 
 - Python 3.10 or higher
-- Required Python packages (installed automatically with `pip`):
+- Required Python packages (installed automatically with `uv`):
   - yt-dlp
   - rich
   - mutagen
@@ -24,20 +24,25 @@ A powerful Python script for downloading music from YouTube. This tool allows yo
 
 ## 🔧 Installation
 
-1. Clone this repository:
+1. Install `uv` if you don't have it already:
+   ```bash
+   curl -LsSf https://astral.sh/uv/install.sh | sh
+   ```
+
+2. Clone this repository:
    ```bash
    git clone https://github.com/helioLJ/music-downloader.git
    cd music-downloader
    ```
 
-2. Create a virtual environment and install dependencies:
+3. Set up the project:
    ```bash
-   python -m venv .venv
-   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-   pip install -e .
+   # Create virtual environment and install dependencies
+   uv venv
+   uv sync
    ```
 
-3. Install FFmpeg for your platform:
+4. Install FFmpeg for your platform:
    - **Windows**: Download from [ffmpeg.org](https://ffmpeg.org/download.html) and add to PATH
    - **macOS**: `brew install ffmpeg`
    - **Linux**: `sudo apt install ffmpeg` (Ubuntu/Debian) or `sudo dnf install ffmpeg` (Fedora)
@@ -60,7 +65,7 @@ A powerful Python script for downloading music from YouTube. This tool allows yo
 
 2. Run the script:
    ```bash
-   python main.py -i input.txt -o ./Music --top 3
+   uv run python main.py -i input.txt -o ./Music --top 3
    ```
 
 ## 🛠️ Command Line Options
@@ -89,7 +94,7 @@ echo "Coldplay - Viva La Vida" > input.txt
 echo "Bruno Mars" >> input.txt
 
 # Download to a portable device (e.g., USB drive)
-python main.py -o /media/usb/Music --top 5
+uv run python main.py -o /media/usb/Music --top 5
 
 # Check the results
 ls -l /media/usb/Music
