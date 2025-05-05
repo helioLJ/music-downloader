@@ -1,0 +1,39 @@
+# Python-generated files
+__pycache__/
+*.py[cod]
+*$py.class
+build/
+dist/
+wheels/
+*.egg-info/
+.eggs/
+*.so
+.Python
+
+# Virtual environments
+.venv
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+.nox/
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Project-specific
+output/
+output2/
+input.txt

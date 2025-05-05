@@ -1,0 +1,31 @@
+# Music Downloads
+# ──────────────────────────────
+# This file contains the list of songs and artists to download.
+# 
+# Supported formats:
+# 1. Specific songs: "Artist - Song Title"
+# 2. Artists: "Artist Name" (downloads the TOP N songs)
+# 3. URLs: Direct YouTube links or playlists
+#
+# IMPORTANT: One song per line!
+
+# EXAMPLES OF SPECIFIC SONGS (downloads exactly the requested song)
+The Beatles - Hey Jude
+Queen - Bohemian Rhapsody
+Adele - Hello
+Ed Sheeran - Perfect
+Taylor Swift - Blank Space
+Metallica - Nothing Else Matters
+Coldplay - Viva La Vida
+
+# EXAMPLES OF ARTISTS (downloads the TOP N songs of the artist)
+Michael Jackson
+Bruno Mars
+Lady Gaga
+AC/DC
+Beyoncé
+Justin Bieber
+
+# EXAMPLES OF URLs (downloads the complete content of the URL)
+https://www.youtube.com/watch?v=JGwWNGJdvx8
+https://www.youtube.com/playlist?list=PLMC9KNkIncKtPzgY-5rmhvj7fax8fdxoj 
